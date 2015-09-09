@@ -9,7 +9,7 @@ RUN apt-get update && \
     unzip -q /opt/nodejs.zip -d /opt && \
     cp /opt/docker-node-master/app/json-server.js /opt && \
     cp /opt/docker-node-master/app/package.json /opt && \
-    npm install && \
-    npm run
+    cd /opt && npm install && \
+    cd /opt && npm run
 
 WORKDIR /opt
