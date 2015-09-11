@@ -1,4 +1,4 @@
-FROM node:0.12.7-wheezy
+FROM node:4.0.0
 
 MAINTAINER John Lin <linton.tw@gmail.com>
 
