@@ -1,4 +1,4 @@
-FROM node:4.1.0
+FROM node:4.1.1
 
 MAINTAINER John Lin <linton.tw@gmail.com>
 
