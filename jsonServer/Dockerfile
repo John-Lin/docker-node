@@ -14,6 +14,7 @@ RUN apt-get update && \
 # Clean up APT and zip when done.
 RUN apt-get clean && rm -rf /opt/nodejs.zip
 
-CMD ["pm2", "/opt/json-server.js"]
+CMD ["/bin/bash"]
+# CMD ["pm2", "/opt/json-server.js"]
 
 WORKDIR /opt
