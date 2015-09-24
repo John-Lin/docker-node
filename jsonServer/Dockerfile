@@ -17,4 +17,5 @@ RUN apt-get clean && rm -rf /opt/nodejs.zip
 WORKDIR /opt
 
 # CMD ["/bin/bash"]
-CMD ["/usr/local/bin/pm2", "start", "/opt/json-server.js"]
+CMD ["pm2", "--version"]
+# CMD ["/usr/local/bin/pm2", "start", "/opt/json-server.js"]
