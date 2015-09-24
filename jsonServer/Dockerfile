@@ -9,11 +9,11 @@ RUN apt-get update && \
     unzip -q /opt/nodejs.zip -d /opt && \
     cp /opt/docker-node-master/jsonServer/json-server.js /opt && \
     cp /opt/docker-node-master/jsonServer/package.json /opt && \
-    cd /opt && npm install
+    cd /opt && npm install && npm install pm2 -g
 
 # Clean up APT and zip when done.
 RUN apt-get clean && rm -rf /opt/nodejs.zip
 
-CMD ["node", "/opt/json-server.js"]
+CMD ["pm2", "/opt/json-server.js"]
 
 WORKDIR /opt
