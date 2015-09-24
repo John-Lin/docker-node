@@ -11,6 +11,9 @@ RUN apt-get update && \
     cp /opt/docker-node-master/jsonServer/package.json /opt && \
     cd /opt && npm install
 
+# Clean up APT and zip when done.
+RUN apt-get clean && rm -rf /opt/nodejs.zip
+
 CMD ["node", "/opt/json-server.js"]
 
 WORKDIR /opt
