@@ -14,6 +14,9 @@ RUN wget -O /opt/vcpe-hub.zip "https://github.com/vcpe-io/vcpe-hub/archive/maste
     unzip -q /opt/vcpe-hub.zip -d /opt && \
     mv /opt/vcpe-hub-master /opt/ryu
 
+# vCPE hub dependencies package
+RUN pip install -U networkx
+
 # Clean up
 RUN rm -rf /opt/vcpe-hub.zip
 
