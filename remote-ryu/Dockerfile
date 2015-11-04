@@ -4,8 +4,8 @@ MAINTAINER John Lin <linton.tw@gmail.com>
 
 ADD remote-ryu /opt/ryu/remote-ryu
 
-# Node.js 4.x Installation
-RUN curl -sL https://rpm.nodesource.com/setup_5.x | bash - && \
+# Node.js 5.x Installation
+RUN curl -sL https://deb.nodesource.com/setup_5.x | bash - && \
     apt-get install -y nodejs && \
     cd /opt/ryu/remote-ryu && npm install
 
