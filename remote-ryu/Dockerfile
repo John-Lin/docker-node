@@ -4,6 +4,11 @@ MAINTAINER John Lin <linton.tw@gmail.com>
 
 ADD remote-ryu /opt/ryu/remote-ryu
 
+# numpy and scipy Prerequisite
+RUN apt-get update && \
+    apt-get install -qy --no-install-recommends build-essential gfortran \
+      libatlas-base-dev python-dev
+
 # Node.js 5.x Installation
 RUN curl -sL https://deb.nodesource.com/setup_5.x | bash - && \
     apt-get install -y nodejs && \
