@@ -7,7 +7,7 @@ ADD remote-ryu /opt/ryu/remote-ryu
 # numpy and scipy Prerequisite
 RUN apt-get update && \
     apt-get install -qy --no-install-recommends build-essential gfortran \
-      libatlas-base-dev python-dev
+      libatlas-base-dev python-dev curl
 
 # Node.js 6.x Installation
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash - && \
