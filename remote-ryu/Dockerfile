@@ -9,8 +9,8 @@ RUN apt-get update && \
     apt-get install -qy --no-install-recommends build-essential gfortran \
       libatlas-base-dev python-dev
 
-# Node.js 5.x Installation
-RUN curl -sL https://deb.nodesource.com/setup_5.x | bash - && \
+# Node.js 6.x Installation
+RUN curl -sL https://deb.nodesource.com/setup_6.x | bash - && \
     apt-get install -y nodejs && \
     cd /opt/ryu/remote-ryu && npm install
 
