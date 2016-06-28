@@ -4,7 +4,7 @@ MAINTAINER John Lin <linton.tw@gmail.com>
 
 ENV HOME /root
 # Define working directory.
-WORKDIR /root
+WORKDIR /root/ryu
 
 # ADD remote-ryu /opt/ryu/remote-ryu
 ADD remote-ryu ryu/remote-ryu
