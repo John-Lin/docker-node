@@ -21,8 +21,7 @@ RUN curl -sL https://deb.nodesource.com/setup_6.x | bash - && \
     cd /root/ryu/remote-ryu && npm install
 
 # Download vCPE hub
-RUN curl -kL https://github.com/hsnl-dev/vcpe-hub/archive/master.tar.gz | tar -xvz && \
-    mv vcpe-hub-master /root/ryu
+RUN curl -kL https://github.com/hsnl-dev/vcpe-hub/archive/master.tar.gz | tar -xvz
 
 # RUN wget -O /opt/vcpe-hub.zip "https://github.com/hsnl-dev/vcpe-hub/archive/master.zip" --no-check-certificate && \
 #     unzip -q /opt/vcpe-hub.zip -d /opt && \
