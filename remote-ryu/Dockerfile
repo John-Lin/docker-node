@@ -7,7 +7,7 @@ ENV HOME /root
 WORKDIR /root/ryu
 
 # ADD remote-ryu /opt/ryu/remote-ryu
-ADD remote-ryu ryu/remote-ryu
+ADD remote-ryu /root/ryu/remote-ryu
 
 # numpy and scipy Prerequisite
 RUN apt-get update && \
