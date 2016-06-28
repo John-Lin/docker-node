@@ -18,7 +18,7 @@ RUN apt-get update && \
 # Node.js 6.x Installation
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash - && \
     apt-get install -y nodejs && \
-    cd ryu/remote-ryu && npm install
+    cd /root/ryu/remote-ryu && npm install
 
 # Download vCPE hub
 RUN curl -kL https://github.com/hsnl-dev/vcpe-hub/archive/master.tar.gz | tar -xvz && \
